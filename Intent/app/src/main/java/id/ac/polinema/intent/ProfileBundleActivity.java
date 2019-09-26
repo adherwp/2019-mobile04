@@ -27,7 +27,7 @@ public class ProfileBundleActivity extends AppCompatActivity {
         if (extras != null) {
             String username =  extras.getString(USERNAME_KEY);
             String name =  extras.getString(NAME_KEY);
-            String age =  extras.getString(AGE_KEY);
+            String age =  String.valueOf(extras.getInt(AGE_KEY));
 
             usernameText.setText(username);
             nameText.setText(name);
